@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js."></script>
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 id="title">Survey Form</h1>
+			<p id="description"> Thank you for taking the time to help us improve our pizza </p>
+		</header>
+		<div id="survey-form-wrap">
+			<form id="survey-form">
+				<div class="form-group">
+					<label id="name-label">Name</label>
+					<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+				</div>
+				<div class="form-group">
+					<label id="email-label" for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+				</div>
+				<div class="form-group">
+					<label id="number-label">Age (optional)</label>
+					<input type="number" name="age" id="number" class="form-control" min="15" max="99" placeholder="Age" required>
+				</div>
+				<div class="form-group">
+					<label id="role-label">Which option best describes your current role?</label>
+					<select id="drop-down" name="role" class="form-control" required>
+						<option sidabled selected value>Select current role</option>
+						<option value="student">Student</option>
+						<option value="professional">Professional</option>
+						<option value="prefer-not-to-say">Prefer not to say</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label id="radio-label-description">Would you recommend Pizza to a friend?</label>
+					<label id="radio-label">
+						<input type="radio" name="recommend" id="definitely" class="form-control" value="Definitely" checked>Definitely
+					</label>
+					<label id="radio-label">
+						<input type="radio" name="recommend" id="maybe" class="form-control" value="maybe" >Maybe
+					</label>
+					<label id="radio-label">
+						<input type="radio" name="recommend" id="not-sure" class="form-control" value="not-sure" >Not sure
+					</label>
+				</div>
+				<div class="form-group">
+					<label id="role-label">What is you Pizza crust preference?</label>
+					<select id="drop-down" name="role" class="form-control" required>
+						<option sidabled selected value>Select here</option>
+						<option value="cheese-stuffed-crust">Cheese-Stuffed Crust</option>
+						<option value="thin-crust">Thin Crust</option>
+						<option value="thick-crust">Thick Crust</option>
+						<option value="sicilian-style-crust">Sicilian Style Crust</option>
+						<option value="chicago-deep-dish">Chicago Deep Dish</option>
+						<option value="neapolitan-crust">Neapolitan Crust</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label id="checkbox-label-description">What is you Favorite Pizza flavor?</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="margherita-pizza" checked>Margherita Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="pepperoni-pizza">Pepperoni Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="double-cheese-pizza" >Double cheese Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="neapolitan-pizza" >Neapolitan Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="hawaiian-pizza" >Hawaiian Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="mushrooms-and-onions-pizza" >Mushrooms and Onions Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="veggie-pizza" >Veggie Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="meat-pizza" >Meat Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="bbq-chicken-pizza" >BBQ Chicken Pizza
+					</label>
+					<label id="checkbox-label">
+						<input type="checkbox" name="prefer" class="input-checkbox" value="supreme-pizza" >Supreme Pizza
+					</label>
+				</div>
+				<div class="form-group">
+					<label id="comment-label">Any comments or suggestions?</label>
+					<textarea  name="comment" id="comments" class="form-control" placeholder="Enter your comment here..." required></textarea>
+				</div>
+
+				<div class="form-group">
+					<button type="submit" id="submit" class="submit-button">Submit</button>
+				</div>
+			</form>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>
